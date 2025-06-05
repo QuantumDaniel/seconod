@@ -1,0 +1,50 @@
+body{
+  background-image:url('../Image/Admistrative block.jpg');
+  background-size:cover;
+  background-repeat:no-repeat;
+  
+}
+.head{
+   text-transform:uppercase;
+}
+
+table{
+  border-collapse: collapse;
+  border-style: solid;
+  margin-top:5px;
+  background-color: antiquewhite;
+
+  
+  
+}
+tr, td,th{
+  border-style:solid;
+  text-align: center;
+}
+
+.details{
+  display:inline-block;
+}
+.name{
+ display:inline-block;
+ text-decoration: underline;
+}
+span{
+  text-decoration: none;
+}
+h1{
+  background-color: green;
+  text-align:center;
+  border-style:solid;
+  padding:5px;
+}
+.table-main{
+  
+}
+
+.heading{
+  border-style:solid;
+  background-color:aqua;
+  padding:5px;
+  width:790px;
+}

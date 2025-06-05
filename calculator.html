@@ -4,64 +4,71 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Calculator</title>
-  <style>
-  div{
-    background-color:white;
-    float:left;
-    padding:4px;
-    margin:0px 40vw;
-
-  }
-  body{
-    background-color: black
-  }
-  </style>
+  <link rel="stylesheet" href="calculator.css">
+  <link rel="stylesheet" href="cbt.css">
+  <link rel="stylesheet" href="cbt-log-in.css">
 </head>
 <body>
-  <div>
-    <p>
-  <button onclick="calculation++; console.log(calculation)">1</button>
-  <button onclick="calculation+=2; console.log(calculation)">2</button>
-  </p>
-
-  <p>
-    <button onclick="calculation+=3; console.log(calculation)">3</button>
-    <button onclick="calculation+=4; console.log(calculation)">4</button>
-
-  </p>
-  <p>
-  <button onclick="calculation+=5; console.log(calculation)">5</button>
-  <button onclick="calculation+=6; console.log(calculation)">6</button>
-  </p>
-  <p>
-    <button onclick="calculation+=7; console.log(calculation)">7</button>
-    <button onclick="calculation+=8; console.log(calculation)">8</button>
-    </p>
-    <p>
-      <button onclick="calculation+=9; console.log(calculation)">9</button>
-      <button onclick="calculation=0; console.log(calculation)">0</button>
-      </p>
-      
-  <p>
-  <button onclick="calculation+='+' ; console.log(calculation)">+</button>
-  <button onclick="eval(calculation); calculation=eval(calculation); console.log(calculation)">=</button>
-  </p>
-  <p>
-    <button onclick="calculation +=' - ' ; console.log(calculation)">-</button>
-    <button onclick="calculation+='*'; console.log(calculation)">x</button>
-    </p>
-    
-  <p>
-    <button onclick="calculation +='**' ; console.log(calculation)">x^2</button>
-    <button onclick="calculation+='/'; console.log(calculation)">÷</button>
-    </p>
-    <button onclick="console.clear()"> C</button>
-  
- 
+ <div class="js-head head">
+    <div class="flex-main">
+      <div class="calculator-flex">
+        <button class="js-calculator-button calculator-button">Calculator</button>
+        </div>
+            <div class="practice-flex">
+            <button class="js-cbt-button cbt"  id = "cbt2">Practice CBT</button>
+          </div>
+         <div class=" js-welcome1 welcome1">  
+      </div>
+      </div>
+    </div>
+ <div class="js-message-main message-main">
+            
+       </div>
+            
+        <div class=" js-main-body main-body">
+            
+      </div>  
   </div>
-  <script>
-    let calculation="";
-  </script>
+  <div class="js-subject-heading1 subject-heading1"></div>
+    <div class="js-question-main question-main">
+       <div class="js-log-in-details-main log-in-details-main">
+        <div class="log-in-details">
+            <div class="details">
+              <div class="image-div">
+              <img src="1703175037858.jpg" title="Quantum" alt="Quantum Daniel(Admin)">
+              </div>
+              <div class="my-message">
+                Welcome to Quantum computer Base Test Web Appplication. Here, you will practice Questions in all fields of study. To get started, log in using 'Quantum' as the username and 'practice' as the password. click on log in and sign up. For more enquiry, contact the Admin on: 09042898107 or Email:<span> <a href="aburorhambagadaniel@gmail.com">aburorhambagadaniel@gmail.com</a></span>
+              </div>
+            </div>
+                 <div class="js-information information">
+                     <div class="intro">QUANTUM COMPUTER BASE TEST</div>
+                      <div class="flow-text"> <marquee>Please log in your details from the form below OR create new account to continue</marquee></div>
+
+                        <div class= "log-in-container">
+                        <div class="js-wrong-information"> </div>
+                        <div class="username-main">
+                        <input type="text" placeholder="Username" class="js-user-name user-name">
+                        </div>
+                        <div class="password-main">
+                        <input type="password" placeholder ="Password" class="js-password password">
+                        </div>
+                        <div class="log-in-button-div">
+                        <button class="js-log-in-button log-in-button">Login</button>
+                        </div>
+                        <div class="password-remember"><a href="#" >Forgot Password?
+
+              </a></div>
+            </div>
+        </div>
+     </div>
+  </div>
+  </div>
+  </div>
+
+  <div class="js-after-submit-main submit-main" ></div>
+
+  <script src="cbt.js" type="module"></script>
+  <script src="calculator.js" type="module"></script>
 </body>
 </html>
-

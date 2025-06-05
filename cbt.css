@@ -1,0 +1,542 @@
+
+.cbt{
+  background-color:blue;
+  color:white;
+  position:absolute;
+  border-radius:20px;
+  padding:5px;
+  cursor:pointer;
+  width:100px;
+  margin-top:13px;
+  flex-basis:30%;
+}
+.head{
+  height:50px;
+  background-color: brown;
+  position:fixed;
+  margin-top:-52px;
+  width:1500px;
+  border-bottom-style: solid;
+  border-width:5px;
+}
+.mathematics,.english,.physics,.chemistry,.back-to-home{
+  background-color:blue;
+  color:white;
+  margin-top:2px;
+  cursor:pointer;
+  margin-left:3px;
+}
+.subject-heading{
+  height:50px;
+  background-color:white;
+  border-bottom-style: solid;
+  width:1216px;
+
+}
+.instruction{
+  font-style:italic;
+  border-bottom-style:solid;
+  background-color: black;
+  color:white;
+  animation:changeBackgroundColor 5s infinite forwards;
+  
+}
+
+@keyframes changeBackgroundColor{
+  25%{
+    background-color: yellow;
+    color:black;
+  }
+  50%{
+    background-color:green;
+    color:white;
+}
+100%{
+  background-color:pink;
+  color:black;
+}
+}
+.instruction2{
+  color:yellow;
+
+}
+.instruction3{
+  color:purple;
+  position:relative;
+}
+.subject-heading1{
+  height:50px;
+  position:fixed;
+  margin-top:-698px;
+  z-index:20;
+
+}
+.quantum{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.question-main{
+  position:fixed;
+  height:400px;
+  left:0;
+  right:0;
+  margin-top:-645px;
+  
+}
+.question{
+  position:absolute;
+  height:370px;
+  left:0;
+  right:0;
+  background-color:chartreuse;
+  border-bottom-style: groove;
+  border-width:7px;
+}
+
+.question-number{
+  position:absolute;
+  margin-top:15px;
+  margin-left:5px;
+  display:inline-block;
+}
+.question-ask{
+  margin-top:15px;
+  margin-left:17px;
+  position:absolute;
+  
+}
+.option1{
+  margin-top:-2px;
+margin-left:15px;
+
+}
+
+.previous-button{
+  border-radius:40px;
+  margin-top:100px;
+  cursor:pointer;
+  margin-left:-10px;
+}
+.next-button{
+  border-radius:40px;
+  margin-top:100px;
+  margin-left:15px;
+  padding: 2px 20px;
+  cursor:pointer;
+
+}
+
+.question1{
+  margin-top:9px;
+  width:35px;
+  height:25px;
+  cursor:pointer;
+}
+.submit{
+  margin-top:10px;
+  margin-left:3px;
+  background-color: green;
+  color:white;
+  cursor:pointer;
+}
+.questions{
+  margin-left:3px;
+}
+.navigate-button{
+  display:absolute;
+  margin-left:10.5px;
+  margin-top:70px;
+}
+.count-down{
+  margin-left:900px;
+  position:absolute;
+  background-color: green;
+  margin-top:10px;
+  width:140px;
+  text-align:center;
+  border-style:solid;
+  border-color:black;
+  color:white;
+  height:40px;
+}
+.options-main{
+  position:absolute;
+  margin-top:35px;
+  margin-left:30px;
+}
+input{
+  position:absolute;
+  margin-left:-15px;
+  }
+  .subject-button{
+    border-style:solid;
+    min-width:100px;
+    max-width:100px;
+    background-color: rgb(12, 12, 40);
+    color:white;
+  }
+.subject-selected{
+  margin-top:2px;
+  margin-left:2px;
+}
+.js-head2{
+  background-color:blue;
+}
+  .warning{
+    background-color:red;
+    width:230px;
+    height:60px;
+    margin-left:6px;
+    text-align: center;
+    padding:10px;
+    position:absolute;
+    margin-top:1.5px;
+    border-style:solid;
+    
+  }
+    .warning1{
+      width:260px;
+      height:80px;
+      margin-left:300px;
+      text-align: center;
+      padding:5px;
+      position:absolute;
+      margin-top:50px;
+    
+  }
+  .warning-message{
+    color:yellow;
+    margin-top:-3px;
+    font-size:larger;
+  }
+  .warning-cancel{
+    margin-left:103px;
+    margin-top:-10px;
+    position:absolute;
+    cursor:pointer;
+  }
+.yes-button{
+  margin-left:-8px;
+  width:40px;
+  cursor:pointer;
+  border-style:solid;
+}
+.no-button{
+  margin-left:110px;
+  width:40px;
+  cursor:pointer;
+  border-style:solid;
+}
+.submit-main{
+  position:fixed;
+  width:390px;
+  height:80px;
+  text-align:center;
+  align-content: center;
+  margin-left:480px;
+  margin-top:-600px;
+}
+.after-submit-message{
+  color:white;
+  background-color: red;
+  border-style:solid;
+  width:300px;
+  height:70px;
+  align-content: center;
+  
+}
+.hour{
+  position:absolute;
+  display:inline-block;
+  margin-left:-63px;
+  margin-top:7px;
+}
+
+.minute{
+  position:absolute;
+  display:inline-block;
+  margin-left:-40px;
+  margin-top:7px;
+}
+.second{
+  position:absolute;
+  display:inline-block;
+  margin-top:7px;
+}
+.colon1{
+  position:absolute;
+  display:inline-block;
+  margin-left:-50px;
+  margin-top:7px;
+}
+.colon2{
+  position:absolute;
+  display:inline-block;
+  margin-left:-12px;
+  margin-top:7px;
+}
+.count-down-main{
+  margin-left:-70px;
+  position:absolute;
+  width:100px;
+  background-color: white;
+  height:40px;
+  color:black;
+  display:inline-block;
+  align-self: center;
+  font-size:x-large;
+  font-weight:bold;
+  padding-left:15px;
+  padding-right:25px;
+
+}
+
+#cbt2:disabled{
+  cursor:not-allowed;
+  opacity:0.5;
+  
+}
+
+#prevent:disabled{
+  cursor:not-allowed;
+  opacity:0.5;
+}
+
+.question-Number{
+  background-color: blue;
+
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 100;
+
+  left: 50%;
+  margin-left: -718px;
+  top:30px;
+  text-decoration:none;
+  background-color: white;
+  padding:5px;
+  align-items: start;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+/*
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+*/
+.log-in-details{
+  flex-grow:1;
+  width:950px;
+  height:400px;
+  margin-top:5px;
+  margin-left:130px;
+  position:absolute;
+  border-radius:20px;
+  border-width:5px;
+  border-style:solid;
+  border-color:green;
+
+}
+
+.log-in-details-main{
+  display:flex;
+  right:0;
+  top:-30px;
+  height:100vh;
+  margin-top:-15px;
+  position:relative;
+
+}
+.details{
+  width:475px;
+  height:400px;
+  background-color:white;
+  position:absolute;
+  border-top-left-radius:15px;
+  border-bottom-left-radius:15px;
+}
+.information{
+  display:flex;
+  width:475px;
+  height:400px;
+  margin-left:475px;
+  background-color:red;
+  position:absolute;
+  border-top-right-radius:15px;
+  border-bottom-right-radius:15px;
+}
+
+.intro{
+  margin-left:10px;
+  background-color:aquamarine;
+  border-style:solid;
+  color:black;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:larger;
+  margin-right:60px;
+  margin-left:70px;
+  font-weight:bold;
+  margin-top:2px;
+  padding-left:5px;
+  padding-right:5px;
+  position:absolute;
+
+}
+.flow-text{
+color:white;
+font-weight: bold;
+position:absolute;
+margin-top:30px;
+}
+
+.log-in-container{
+  position:absolute;
+  margin-top:90px;
+  margin-left:105px;
+  
+  
+}
+.username-main{
+  display:inline-block;
+
+}
+.password-main{
+  margin-top:40px;
+  
+
+}
+
+.password,.user-name{
+  border-width: 3px;
+  width:300px;
+  align-self: center;
+  display:absolute;
+  padding-top:15px;
+  border-radius:7px;
+  border-style:solid;
+  box-sizing:content-box;
+  /*text-indent:-5px;*/
+
+}
+img{
+  margin-left:20px;
+  margin-top:20px;
+}
+
+.my-message{
+  position:absolute;
+  margin-top:-0.5px;
+  width:171px;
+  height:398px;
+  margin-left:300px;
+  border-style:solid;
+  text-align:center;
+  color:black;
+  font-weight:bold;
+  background-color: antiquewhite;
+
+
+}
+.image-div{
+  position:absolute;
+
+}
+
+img{
+  border-style:solid;
+  width:250;
+  height:398px;
+  margin-top:-0.5px;
+  margin-left:-1px;
+  border-top-left-radius:15px;
+  border-bottom-left-radius:15px;
+}
+
+span{
+  font-size:x-small;
+}
+::placeholder{
+  font-size:25px;
+}
+.wrong-information{
+  background-color: white;
+  width:300px;
+  height:20px;
+  position:absolute;
+  margin-left:-10px;
+  margin-top:-8px;
+  border-radius:30px;
+  color:red;
+  font-size:15px;
+  text-align:center;
+}
+.log-in-button-div{
+  position:absolute;
+  margin-top:39px;
+  margin-left:240px;
+}
+.log-in-button{
+  background-color: blue;
+  color:white;
+  cursor:pointer;
+}
+.password-remember{
+  position:absolute;
+  margin-top:38px;
+  width:200px;
+  margin-left:-10px;
+}
+.welcome{
+  position:absolute;
+  background-color:white;
+  padding:5px;
+  margin-left:-300px;
+  border-radius:20px;
+  margin-top:5px;
+  border-style:solid;
+}
+
+.flex-main{
+  display:flex;
+  flex-direction: row;
+  align-content: space-around;
+  justify-content:center;
+  flex-grow:1;
+  flex-shrink:1;
+  flex:1;
+  background-color: aquamarine;
+}
+.calculator-flex,.practice-flex{
+  flex-basis:100px;
+  position:absolute;
+}
+.second2{
+  margin-left:80px;
+  margin-top:15px;
+  font-size:medium;
+}
+
+
+
+
+
+
+  

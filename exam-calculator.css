@@ -1,0 +1,61 @@
+body{
+  background-color:blueviolet;
+}
+.head{
+  background-color: antiquewhite;
+  width:fit-content;
+  border-style:solid;
+
+}
+.school-name{
+  font-size: larger;
+  align-content: center;
+  text-align:center;
+  background-color: brown;
+  color:white;
+}
+table{
+  text-align:center;
+  margin-left:0px;
+  width:100%;
+}
+.control{
+  margin-left:4px;
+
+}
+button{
+border-style:solid;
+background-color: brown;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+.subject{
+  text-align:start;
+}
+td{
+  background-color:chocolate;
+  border-style:solid;
+  color:white;
+  border-style:solid;
+}
+th{
+  background-color:chocolate;
+}
+
+@media print {
+  table {
+    width: 100%;
+    table-layout: fixed;
+    page-break-inside: avoid;
+    break-inside: avoid;
+  }
+}
+
+@media print {
+  .no-print {
+    display: none;
+  }
+}
+
+

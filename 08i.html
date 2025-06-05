@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <button
+  onclick="
+   myGenerate=Math.random();
+generate();
+  if(result==='Head'){
+    score.wins++;
+    console.log(`you picked: Head\n computer picked:${result}\n you win \n`);
+    console.log(score);
+  }
+  else if(result==='Tail'){
+     score.losses++;
+    console.log(`you picked: Head\n computer picked${result}\n you loose\n`);
+    console.log(score);
+  }
+  ">Head</button>
+
+
+  <button onclick="
+   myGenerate=Math.random();
+  generate();
+  if(result==='Tail'){
+    score.wins++;
+    console.log(`you picked: Tail \n computer picked: ${result}\n you win`);
+    console.log(score)
+  }
+  else if(result==='Head'){
+    score.losses++;
+    console.log(`you picked: Tail \n computer picked: ${result}\n you loose`);
+    console.log(score);
+  }
+
+  ">Tail</button>
+
+
+  <script>
+   
+    const score={
+      wins:0,
+      losses:0
+    }
+    
+
+    let result='';
+    function generate(){
+      localStorage.setItem('score',JSON.stringify(score));
+    localStorage.getItem(score);
+      
+      if(myGenerate<0.5){
+        result='Tail';
+        }
+        else if(myGenerate>=0.5){
+          result='Head';
+          
+        }
+      }
+    
+  
+  
+  </script>
+</body>
+</html>

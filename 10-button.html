@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>button</title>
+  <style>
+    .button1{
+      color:white;
+      background-color:black;
+      font-size:xx-small;
+      padding:8px 12px;
+      border-radius:7px;
+    }
+    .is-button2{
+    color:black;
+    background-color:red;
+    }
+    .is-test{
+      color:red;
+      background-color:black;
+      font-size:larger;
+      padding-right:50vw;
+    }vw
+  </style>
+  
+</head>
+<body>
+  <button class="js-button1 button1" onclick="
+    buttonChange();
+    ">Gaming</button>
+    <br>
+    <input class="js-test1"></input>
+    <button class="js-test"
+    onclick="testButton()"
+    >calculate</button>
+    <p class="js-test3 test"></p>
+
+  <script>
+    
+   function buttonChange()
+   {
+    const name1 =document.querySelector('.js-button1');
+
+    name1.classList.add('is-button2');
+   if(name1.classList.contians('is-button2')){
+    name1.classList.remove('is-button2');
+   
+  }
+}
+function testButton(){
+let name3=document.querySelector('.js-test3');
+name2=(document.querySelector('.js-test1'));
+name3.innerHTML=(name2.value);
+
+if(name2.value<0){
+  name3.classList.add('is-test');
+  name3.innerHTML=`Error: cost can not be less than $0`;
+}
+else{
+  name3.classList.remove('is-test');
+}
+}
+
+  </script>
+</body>
+</html>

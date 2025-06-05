@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check exam</title>
+  <link rel="stylesheet" href="exam-calculator.css">
+</head>
+<body>
+  <div class="head">
+    <table>
+      <div class="school-name">TELESCOPE INTERNATIONA SCHOOLS EXAMINATION CALCULATOR</div>
+        <thead>
+          <tr>
+            <th>
+              S/N
+            </th>
+            <th>
+              SUBJECT
+            </th>
+            <th>
+              C.A1(10)
+            </th>
+            <th>
+              C.A2 (20)
+            </th>
+            <th>
+              C.A TOTAL(30)
+            </th>
+            <th>
+              EXAM(70)
+            </th>
+            <th>
+              EXAM TOTAL (100)
+            </th>
+            <th>
+              GRADE
+            </th>
+            <th>
+              REMARK
+            </th>
+          </tr>
+          <tbody>
+          <tr>
+            <td>1.</td>
+            <td class="subject">MATHEMATICS</td>
+            <td><input type="number" id="maths-ca1" class="js-maths-ca1" min = "0" ></td>
+            <td><input type="number" id="maths-ca2"></td>
+            <td><input type="number" id="maths-ca-total"></td>
+            <td><input type="number" id="maths-exam"></td>
+            <td><input type="number" id="maths-exam-total"></td>
+            <td class="js-maths-grade maths-grade"></td>
+            <td class="js-maths-remark"></td>
+          </tr>
+          <tr>
+            <td>2.</td>
+            <td class="subject">ENGLISH</td>
+            <td><input type="number" id="english-ca1"></td>
+            <td><input type="number" id="english-ca2"></td>
+            <td><input type="number" id="english-ca-total"></td>
+            <td><input type="number" id="english-exam"></td>
+            <td><input type="number" id="english-exam-total"></td>
+            <td class="js-english-grade"></td>
+            <td class="js-english-remark"></td>
+          </tr>
+          <tr>
+            <td>3.</td>
+            <td class="subject">PHYSICS</td>
+            <td><input type="number" id="physics-ca1"></td>
+            <td><input type="number" id="physics-ca2"></td>
+            <td><input type="number" id="physics-ca-total"></td>
+            <td><input type="number" id="physics-exam"></td>
+            <td><input type="number" id="physics-exam-total"></td>
+            <td class="js-physics-grade"></td>
+            <td class="js-physics-remark"></td>
+          </tr>
+          <tr>
+            <td>4.</td>
+            <td class="subject">CHEMISTRY</td>
+            <td><input type="number" id="chemistry-ca1"></td>
+            <td><input type="number" id="chemistry-ca2"></td>
+            <td><input type="number" id="chemistry-ca-total"></td>
+            <td><input type="number" id="chemistry-exam"></td>
+            <td><input type="number" id="chemistry-exam-total"></td>
+            <td class="js-chemistry-grade"></td>
+            <td class="js-chemistry-remark"></td>
+          </tr>
+          <tr>
+            <td>5.</td>
+            <td class="subject">BIOLOGY</td>
+            <td><input type="number" id="biology-ca1"></td>
+            <td><input type="number" id="biology-ca2"></td>
+            <td><input type="number" id="biology-ca-total"></td>
+            <td><input type="number" id="biology-exam"></td>
+            <td><input type="number" id="biology-exam-total"></td>
+            <td class="js-biology-grade"></td>
+            <td class="js-biology-remark"></td>
+          </tr>
+          <tr>
+            <td>6.</td>
+            <td class="subject">AGRIC.SC</td>
+            <td><input type="number" id="agric-ca1"></td>
+            <td><input type="number" id="agric-ca2"></td>
+            <td><input type="number" id="agric-ca-total"></td>
+            <td><input type="number" id="agric-exam"></td>
+            <td><input type="number" id="agric-exam-total"></td>
+            <td class="js-agric-grade"></td>
+            <td class="js-agric-remark"></td>
+          </tr>
+          <tr>
+            <td>7.</td>
+            <td class="subject">ECONOMICS</td>
+            <td><input type="number" id="economics-ca1"></td>
+            <td><input type="number" id="economics-ca2"></td>
+            <td><input type="number" id="economics-ca-total"></td>
+            <td><input type="number" id="economics-exam"></td>
+            <td><input type="number" id="economics-exam-total"></td>
+            <td class="js-economics-grade"></td>
+            <td class="js-economics-remark"></td>
+          </tr>
+          <td>8.</td>
+            <td class="subject">MARKETING</td>
+            <td><input type="number" id="marketing-ca1"></td>
+            <td><input type="number" id="marketing-ca2"></td>
+            <td><input type="number" id="marketing-ca-total"></td>
+            <td><input type="number" id="marketing-exam"></td>
+            <td><input type="number" id="marketing-exam-total"></td>
+            <td class="js-marketing-grade"></td>
+            <td class="js-marketing-remark"></td>
+          </tr>
+          <td>9.</td>
+            <td class="subject">CIVIC.EDU</td>
+            <td><input type="number" id="civic-ca1"></td>
+            <td><input type="number" id="civic-ca2"></td>
+            <td><input type="number" id="civic-ca-total"></td>
+            <td><input type="number" id="civic-exam"></td>
+            <td><input type="number" id="civic-exam-total"></td>
+            <td class="js-civic-grade"></td>
+            <td class="js-civic-remark"></td>
+          </tr>
+          </tbody>
+        </thead>
+    </table>
+    <div class="control">
+      <button class="js-calculate" class="no-print">Calculate</button>
+      <button class="js-print-button" class="no-print">Print</button>
+      <button class="js-clear" class="no-print">Clear</button>
+    </div>
+  </div>
+  <script src="exam-calculator.js"></script>
+</body>
+</html>

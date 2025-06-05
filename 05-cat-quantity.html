@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>cat quantity</title>
+</head>
+<body>
+  <button 
+  onclick="console.log(`Cart quantity: ${cartQuantity}`)
+  cartQuantity2()"
+  >show quantity</button>
+
+  <button onclick="cartQuantity=cartQuantity + 1;
+  console.log(`Cart quantity: ${cartQuantity}`);
+  cartQuantity2();
+
+  cartQuantity2();
+  ">Add to cart</button>
+
+  <button onclick="cartQuantity=cartQuantity + 2;
+  console.log(`Cart quantity: ${cartQuantity}`);
+  cartQuantity2();
+  ">+2</button>
+
+  <button onclick="cartQuantity=cartQuantity + 3;
+  console.log(`Cart quantity: ${cartQuantity}`);
+  cartQuantity2();
+  ">+3</button>
+
+  <button onclick="cartQuantity=0;
+  console.log('cart was reset.');
+  console.log(`Cart quantity: ${cartQuantity}`);
+  cartQuantity2();
+  ">Reset cart</button>
+
+<!--<div class="menu">
+    <div class="lines" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+      <ul id="menuList">
+        <li>name1</li>
+        <li>name2</li>
+        <li>name3</li>
+      </ul>
+    -->
+<p class=" js-addToCart"></p>
+
+  </div>
+  <script>
+  let cartQuantity=0;
+  
+  function cartQuantity2(){
+    
+  document.querySelector('.js-addToCart').innerHTML=`CartQuantity: ${cartQuantity}`;
+  }
+  
+   </script>
+    </body>
+    </html>

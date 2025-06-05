@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="calcStyle.css">
+</head>
+<style>
+  
+</style>
+<body>
+  
+
+
+
+  <div class="js-display2">
+
+    <div class="console-display">
+
+      <div class="js-display"></div>
+      <div class="js-display3"></div>
+    </div>
+    <p>
+      <button onclick="updateCalculator(calculation+='1');
+      displayCalculator();
+      ">1</button>
+    
+      <button onclick="updateCalculator(calculation+='2');
+      displayCalculator();
+      ">2</button>
+        <button onclick="updateCalculator(calculation+='3');
+        displayCalculator();
+        ">3</button>
+        <button class="set"; onclick="updateCalculator(calculation+='+') 
+        displayCalculator();
+        ">+</button>
+        </p>
+
+        <p>
+          <button onclick="updateCalculator(calculation+='4');
+          displayCalculator();
+          ">4</button>
+            
+        <button onclick="updateCalculator(calculation+='5');displayCalculator();
+        
+        ">5</button>
+        <button onclick="updateCalculator(calculation+='6');
+        displayCalculator();
+        ">6</button>
+        <button class="set" onclick="calculation +=' - ' ; console.log(calculation)
+        displayCalculator();
+        ">-</button>
+        
+        </p>
+
+    <p>
+      <button onclick="updateCalculator(calculation+='7');
+      displayCalculator();
+      ">7</button>
+      <button onclick="updateCalculator(calculation+='8');displayCalculator();"
+      >8</button>
+        <button onclick="updateCalculator(calculation+='9');
+        displayCalculator();
+        ">9</button>
+            <button class="set"onclick="updateCalculator(calculation+='*')
+            displayCalculator();
+            ">*</button>
+        </p>
+
+   
+
+    
+        <p>
+          <button onclick="updateCalculator(calculation+=0);
+          displayCalculator();
+          ">0</button>
+    <button onclick="updateCalculator(calculation+='.')
+    displayCalculator();
+    ">.</button>
+    
+
+
+<button onclick="eval(calculation); updateCalculator(calculation=eval(calculation))
+  document.querySelector('.js-display3').innerHTML= `= ${calculation}`;
+  
+  
+  " >=</button>
+  <button class="set"onclick="updateCalculator(calculation+='/')
+  displayCalculator();
+  ">/</button>
+  
+          
+    
+          
+          </p>
+  
+
+  
+  </p>
+  <p>
+    
+
+    
+    <p>
+    
+    <button onclick="updateCalculator(calculation=0)
+    displayCalculator();
+    document.querySelector('.js-display3').innerHTML=`${calculation}`;
+    "> Clear</button>
+
+</p>
+<!--  <button onclick="updateCalculator(calculation +='**')
+    displayCalculator();
+    ">**</button> -->
+   
+    
+
+  
+  
+    
+  </div>
+
+  
+
+
+
+  <script>
+
+src="java-arrange.js"
+
+    
+  </script>
+  
+</body>
+</html>

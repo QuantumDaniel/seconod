@@ -1,0 +1,17 @@
+
+body{
+  background-color:rgb( 150 200 200)
+}
+button{
+  background-color:black;
+  color:white;
+  border-radius:70px;
+  border:none;
+  font-size:larger;
+  text-align: center;
+  font-family:arial;
+  text-size-adjust:
+}
+.set{
+  background-color:rgb(181, 255, 33);
+}

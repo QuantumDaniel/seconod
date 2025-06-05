@@ -1,0 +1,164 @@
+!<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+
+  <style>
+    div.js-display2{
+      background-color:white;
+      padding-left:4px;
+      float:left;
+      padding-bottom: 20px;
+      margin:3vw,3vw;
+      border-style:solid;
+      border-width:20px;
+      border-color:grey;
+    }
+
+    div.console-display{
+      background-color:white;
+      padding:30px;
+      background-attachment: fixed;
+      background-size: auto;
+      border-style:solid;
+      padding-left:120px;
+      padding-right:140px;
+      margin-top:5px;
+      margin:0px, 10px;
+      text-align:20px;
+      border-style:solid;
+      border-width:15px;
+      border-color:grey;
+    }
+    body{
+      background-color: black
+    }
+
+    button {background-size: 100px;
+      padding:20px;
+
+    }
+    </style>
+</head>
+<body>
+  <div class="js-display2">
+
+    <div class="console-display">
+
+      <p class="js-display"></p>
+      <p class="js-display3"></p>
+    </div>
+
+    <p>
+      <button onclick="updateCalculator(calculation+='7');
+      displayCalculator();
+      ">7</button>
+      <button onclick="updateCalculator(calculation+='8');displayCalculator();"
+      >8</button>
+        <button onclick="updateCalculator(calculation+='9');
+        displayCalculator();
+        ">9</button>
+        </p>
+        <button onclick="updateCalculator(calculation+='4');
+        displayCalculator();
+        ">4</button>
+          
+      <button onclick="updateCalculator(calculation+='5');displayCalculator();
+      
+      ">5</button>
+      <button onclick="updateCalculator(calculation+='6');
+      displayCalculator();
+      ">6</button>
+      </p>
+
+    <p>
+  <button onclick="updateCalculator(calculation+='1');
+  displayCalculator();
+  ">1</button>
+
+  <button onclick="updateCalculator(calculation+='2');
+  displayCalculator();
+  ">2</button>
+    <button onclick="updateCalculator(calculation+='3');
+    displayCalculator();
+    ">3</button>
+    <p>
+
+      <button onclick="updateCalculator(calculation+='+') 
+      displayCalculator();
+      ">+</button>
+
+      <button onclick="updateCalculator(calculation+=0);
+      displayCalculator();
+      ">0</button>
+  
+
+  <button onclick="eval(calculation); updateCalculator(calculation=eval(calculation))
+  document.querySelector('.js-display3').innerHTML= `= ${calculation}`;
+  "
+
+  >=</button>
+  </p>
+  <p>
+    <button onclick="calculation +=' - ' ; console.log(calculation)
+    displayCalculator();
+    ">-</button>
+    <button onclick="updateCalculator(calculation+='*')
+    displayCalculator();
+    ">x</button>
+    <button onclick="updateCalculator(calculation +='**')
+    displayCalculator();
+    ">x^2</button>
+    <p>
+    <button onclick="updateCalculator(calculation+='/')
+    displayCalculator();
+    ">÷</button>
+    <button onclick="updateCalculator(calculation=0)
+    displayCalculator();
+    document.querySelector('.js-display3').innerHTML=`${calculation}`;
+    "> C</button>
+    <button onclick="updateCalculator(calculation+='.')
+    displayCalculator();
+    ">.</button>
+
+    </p>
+  
+    
+  </div>
+
+  
+
+
+
+  <script>
+
+
+
+    let calculation='';
+ localStorage.setItem('calculation',calculation);
+ localStorage.getItem(calculation);
+ if(!calculation){
+  console.log('calcualtion does not exist.');
+ }
+
+function updateCalculator(calculate=''){
+
+ 
+
+  console.log(calculation);
+
+
+}
+
+function displayCalculator(){
+  document.querySelector('.js-display').innerHTML=calculation;
+}
+
+
+  </script>
+  
+</body>
+</html>

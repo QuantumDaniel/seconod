@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  
+  <script>
+
+
+
+
+
+
+
+
+function convertLength(length,from,to){
+      if((from==='km'|| from==='KM') && (to==='ft'|| to==='Ft')){
+
+        console.log(`${length} km= ${length*3281} ft`);
+
+      }
+
+      else if((from==='miles'|| from==='Miles') && (to==='km'|| to==='Km')){
+
+console.log(`${length} miles= ${length*1.6} km`);
+      }
+else if((from==='miles'|| from==='Miles') && (to==='ft'|| to==='Ft')){
+
+console.log(`${length} miles= ${length*5280} ft`);
+}
+      else{
+        console.log(`invalid unit: ${from}`);
+      }
+    
+    }
+    convertLength(5 ,'miles','km');
+    convertLength(5 ,'miles','ft');
+    convertLength(5 ,'km','ft');
+    
+
+/*function greet(name){
+  
+            if(name===undefined){
+              console.log('Hi there');
+            }
+            else{
+
+              console.log(`Hello! ${name} `);
+            }
+          }
+          greet('Daniel');
+          greet('simon');
+          greet();
+          */
+          function convertToFarenheit(celcius,unit){
+            return ((celcius *9/5) +32)+'F';       
+          }
+          console.log(convertToFarenheit(25,'C'));
+
+
+function convertToCelcius(farenheit,unit){
+          return ((farenheit-32)*5/9) + 'C';
+        }
+        console.log(convertToCelcius(86,'F'));
+
+
+
+
+    /*
+    function convertToFarenheit(celcius){
+      Farenheit=(celcius*9/5)+32;
+      return Farenheit;
+    }
+    console.log(convertToFarenheit(25));
+
+function convertToFarenheit1(celcius){
+        console.log((celcius*9/5)+32);
+      }
+      convertToFarenheit1(25);
+
+      console.log(convertToFarenheit(25));
+
+function convertToCelcius(Faerenheit){
+  console.log((Farenheit-32)*5/9);
+}
+convertToCelcius(86);
+
+function convertTemperature(celcius,unit=5){
+  console.log(`${(celcius*9/5)+32}F`);
+}
+convertTemperature(25,'j');
+
+
+function convertTemperature(fareheit,unit){
+  console.log(`${(Farenheit-32)*5/9}C`);
+}
+convertTemperature(86);
+
+
+
+   function greet(name){
+      console.log(`hello ${name}`);
+      if (name==='undefined'){
+       
+      }
+      console.log('Hi there');
+
+    
+    }
+    greet('Daniel');
+    greet('Simon');
+    greet();
+    greet();
+  
+    */
+
+
+  </script>
+</body>
+</html>
